@@ -7,7 +7,7 @@ class Module(BaseModule):
 
     meta = {
         'name': 'Indeed Resume Crawl',
-        'author': 'Tyler Rosonke (tyler.rosonke@gmail.com)',
+        'author': 'Tyler Rosonke (tyler@zonksec.com)',
         'description': 'Crawls Indeed.com for contacts and resumes. Adds name, title, and location to the contacts table and a link to the resume in the profiles table. Can only harvest the first 1,000 results. Result set changes, so running the same crawl mutiple times can produce new contacts. If the PAST_EMPS option is set to true, the module will crawl both current and past employees. Given a keyword, the module will only harvest contacts whose resumes contain the keyword. (e.g. Linux Admin)',
         'query': 'SELECT DISTINCT company FROM companies WHERE company IS NOT NULL',
         'options': (
